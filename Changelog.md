@@ -152,3 +152,156 @@ JavaScript Implementation Details
   Optimised JavaScript: Modular code structure for maintainability
   
   CSS Optimisation: Minimal reflows and repaints
+
+16 - 19 November
+
+Shopping Cart System Implementation
+New Features Added:
+  Complete Cart Management System
+  Add to cart functionality from shop and home pages
+  Persistent cart storage using localStorage
+  Real-time quantity adjustments (increase/decrease)
+  Remove items from cart
+  Dynamic price calculations and updates
+  Cart count badge in navigation menu
+
+Files Modified:
+js/scripts.js - Added comprehensive cart management functions:
+  addToCart() - Add products to cart with validation
+  removeFromCart() - Remove specific items
+  updateQuantity() - Handle quantity changes
+  calculateTotal() - Dynamic price calculations
+  updateCartCount() - Navigation badge updates
+  updateCartDisplay() - Render cart items dynamically
+
+style.css - Added cart-specific styles:
+  Cart count badge styling
+  Quantity control buttons and inputs
+  Hover effects and animations
+  Responsive cart item layouts
+
+cart.html - Completely rebuilt as dynamic cart:
+  Removed static HTML cart items
+  Added dynamic cart table structure
+  Implemented empty cart state
+  Added checkout button functionality
+  Enhanced SEO meta tags
+
+Email Subscription System
+Features Implemented:
+  Email Preference Management (Contact Page)
+  Opt-in functionality with success popup
+  Opt-out functionality with confirmation popup
+  Email validation and error handling
+  Automatic input clearing after submission
+  Newsletter Signup (All pages except shop)
+  Success popup on subscription
+  Email validation
+  Clean form reset after submission
+
+Popup Messages:
+  Opt-in: "You have opted to receive updates about new products and sales!"
+  Opt-out: "You have opted out of receiving any news regarding Belle Noire."
+  Newsletter: "Thank you for subscribing to our newsletter!"
+  Error states: "Please enter a valid email address" / "Please enter your email address"
+
+Files Modified:
+js/scripts.js - Added email handling functions:
+  handleEmailOptIn() - Contact page opt-in
+  handleEmailOptOut() - Contact page opt-out
+  handleNewsletterSignup() - Newsletter subscription
+  Enhanced form validation
+
+style.css - Added popup system styles:
+  Custom popup animations and transitions
+  Success/error state styling
+  Responsive popup design
+  Smooth fade-in/out effects
+
+contact.html - Updated email preferences form:
+  Corrected button event handlers
+  Added proper form structure
+  Enhanced user experience
+
+Technical Improvements
+JavaScript Enhancements:
+  Event Delegation: Efficient event handling for dynamic elements 
+  LocalStorage Integration: Persistent cart data across sessions 
+  Form Validation: Comprehensive email validation with regex 
+  Error Handling: Graceful error states and user feedback
+  Debugging Support: Console logs for troubleshooting
+
+CSS Additions:
+Popup System:
+  #custom-popup - Full-screen modal overlay
+  .popup-content - Styled popup container
+  .popup-icon - Success/error indicators
+  
+  Smooth animations with fadeIn and slideUp
+
+Cart Enhancements:
+  .cart-count - Navigation badge styling
+  .quantity-controls - Quantity adjustment interface
+  .quantity-btn - Increment/decrement buttons
+
+Mobile-responsive cart layouts
+
+HTML Structure Updates:
+  Dynamic Content: Cart items generated via JavaScript
+  Semantic Improvements: Better structure for accessibility  
+  SEO Optimization: Enhanced meta tags across all pages 
+  Form Accessibility: Proper form labels and attributes
+
+User Experience Improvements
+Cart Experience:
+  Visual Feedback: Success popups when adding items 
+  Real-time Updates: Instant price and quantity updates 
+  Empty State Handling: Helpful message when cart is empty  
+  Persistent State: Cart remembers items between sessions
+
+Email Management:
+  Instant Feedback: Immediate popup confirmation  
+  Form Validation: Clear error messages for invalid inputs
+  User-Friendly: Simple, intuitive opt-in/opt-out process
+
+Navigation:
+  Cart Awareness: Always visible cart item count 
+  Visual Hierarchy: Clear indication of cart status
+
+Integration Points
+
+Cart System Integration:
+  Shop Page: Add to cart buttons now functional  
+  Home Page: New arrivals can be added to cart  
+  Cart Page: Full cart management interface  
+  Navigation: Real-time cart count updates
+
+Email System Integration:
+  Contact Page: Email preference management 
+  All Other Pages: Newsletter subscription 
+  Form Validation: Consistent across all forms
+
+Bug Fixes & Corrections
+  Email Preference Fix:
+  Corrected Selectors: Fixed JavaScript targeting for contact page forms 
+  Event Handler Repair: Proper button click handling  
+  Validation Improvement: Enhanced email format checking
+
+Cart System Refinements:
+  Price Parsing: Proper handling of Rand currency format 
+  Quantity Validation: Prevent negative quantities  
+  Storage Management: Efficient localStorage usage
+
+Responsive Design
+  Mobile Optimisations:
+  Cart Interface: Touch-friendly quantity controls 
+  Popup System: Mobile-optimised popup sizing 
+  Form Elements: Responsive input fields and buttons 
+  Navigation: Mobile cart badge positioning
+
+Data Management
+  Storage Implementation:
+  Cart Data: localStorage with belleNoireCart key 
+  Data Structure: Array of objects with product details 
+  Persistence: Survives browser sessions and page refreshes 
+  Validation: Data integrity checks and error handling
