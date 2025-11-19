@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Belle Noire</title>
+    <meta name="description" content="View your shopping cart at Belle Noire. Manage your items, update quantities, and proceed to checkout.">
+    <meta name="keywords" content="shopping cart, checkout, Belle Noire cart, fashion items">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Website header section -->
+<section id="header">
+    <!-- Main title/logo area -->
+    <header><h1>B E L L E &nbsp; N O I R E</h1></header>
+    
+    <!-- Navigation menu with links -->
+    <div>
+        <ul id="navbar">          
+            <li><a href="index.html">Home</a></li> <!-- Home page link -->
+            <li><a href="shop.html">Shop</a></li> <!-- Shop page link -->
+            <li><a href="about.html">About</a></li> <!-- About page link --> 
+            <li><a href="enquiry.html">Enquiries</a></li><!-- Link to Enquiries page -->      
+            <li><a class="active" href="cart.html"><i class="fa fa-shopping-bag"></i></a></li> <!-- Active page = Cart -->
+            <li><a href="contact.html"><i class="fa fa-phone"></i></a></li> <!-- Contact page -->
+        </ul>
+    </div>
+
+    <!-- Mobile menu icon (hamburger menu) -->
+    <div id="mobile">
+        <i id="bar" class="fa fa-bars"></i>
+    </div>
+</section>
+
+
+<!-- Hero section at the top of the page -->
+<section id="hero">
+    <div class="hero-content">
+        <h6>BEAUTY</h6>
+        <h3>Her Beauty Belle&nbsp;Noire</h3>
+        <h3>01.10.2025</h3>
+        <button class="alert-btn">Create an alert</button> <!-- Button to create an alert -->
+    </div>
+</section>
+
+
+<!-- Shopping cart section -->
+<section id="cart">
+    <table width="100%" class="cart-table">
+        <!-- Table header (column titles) -->
+        <thead class="cart-header">
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+
+        <!-- Table body with cart items -->
+        <tbody class="cart-items">
+            <!-- Cart items will be inserted here by JavaScript -->
+            <tr class="cart-empty-message">
+                <td colspan="6" style="text-align: center; padding: 40px;">
+                    <p>Your cart is empty</p>
+                    <a href="shop.html" class="submit-btn" style="display: inline-block; margin-top: 20px; text-decoration: none; padding: 10px 20px;">Continue Shopping</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<!-- Cart totals section -->
+<section id="cart-add">
+    <div id="subtotal" class="cart-total">
+        <h3>Cart Total</h3>
+        <table class="total-table">
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>R0.00</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>R0.00</strong></td>
+            </tr>
+        </table>
+        <div class="checkout-btn-container">
+            <button class="checkout-btn" id="proceed-checkout">Proceed to checkout</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Newsletter subscription section -->
+<section id="newsletter">
+    <div class="newstext">
+        <h4>Sign Up for Newsletters</h4>
+        <p>Receive E-mail updates about our latest drops and special offers.</p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address"> <!-- Email input box -->
+        <button class="normal">Sign Up</button> <!-- Sign up button -->
+    </div>
+</section>
+
+
+<!-- Website footer -->
+<footer class="section-p1">
+    <!-- Contact information -->
+    <div class="column">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>Cnr of Rivonia and Outspan Road, Morningside, Sandton, 2196</p>
+        <p><strong>Phone:</strong> +27 456 7890</p>
+        <p><strong>Hours:</strong> 09:00 - 17:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fa fa-facebook-f"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+    </div>  
+    
+    <!-- About links -->
+    <div class="column">
+        <h4>About</h4>
+        <a href="about.html">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- My Account links -->
+    <div class="column">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="cart.html">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <!-- Install app section -->
+    <div class="column install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="images/pay/AppStore.png" alt="Download on App Store">
+            <img src="images/pay/GooglePlayStore.png" alt="Get it on Google Play">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="images/pay/SecuredPayment.png" alt="Secure Payment Methods">
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&copy; 2025, Belle Noire - All Rights Reserved</p>
+    </div>    
+</footer>
+
+<!-- JavaScript for mobile menu toggle -->
+<script>
+    // Get elements for menu toggle
+    const bar = document.getElementById('mobile');
+    const close = document.getElementById('close');
+    const nav = document.getElementById('navbar');
+    
+    // Open menu when bar is clicked
+    if (bar) {
+        bar.addEventListener('click', () => {
+            nav.classList.add('active');
+        });
+    }
+    
+    // Close menu when close button is clicked
+    if (close) {
+        close.addEventListener('click', () => {
+            nav.classList.remove('active');
+        });
+    }
+</script>
+
+<!-- Link to external JavaScript file -->
+<script src="js/scripts.js"></script>
+
+<!-- Additional cart page functionality -->
+<script>
+    // Checkout button functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkoutBtn = document.getElementById('proceed-checkout');
+        if (checkoutBtn) {
+            checkoutBtn.addEventListener('click', function() {
+                const cart = JSON.parse(localStorage.getItem('belleNoireCart')) || [];
+                if (cart.length === 0) {
+                    showPopup('Your cart is empty. Please add some items before proceeding to checkout.', false);
+                } else {
+                    showPopup('Proceeding to checkout! This would normally redirect to a payment page.');
+                    // In a real implementation, it would redirect to a checkout page:
+                    // window.location.href = 'checkout.html';
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
