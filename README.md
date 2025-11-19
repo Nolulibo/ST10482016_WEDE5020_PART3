@@ -110,3 +110,17 @@ Google Maps Embed: Proper iframe implementation with relevant location data
 Formspree Integration: SEO-friendly form handling that maintains page integrity
 
 Social Media Ready: Proper meta structure to support social media sharing
+
+
+References
+
+Formspree
+Website: https://formspree.io/
+Documentation: https://formspree.io/help/
+
+
+Google Maps Embed API
+Documentation: https://developers.google.com/maps/documentation/embed/
+Get Started Guide: https://developers.google.com/maps/documentation/embed/get-started
+API Reference: https://developers.google.com/maps/documentation/embed/embedding-map
+
